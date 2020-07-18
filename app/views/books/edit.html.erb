@@ -1,0 +1,8 @@
+<h1>Editing Book</h1>
+
+<!-- <form> タグを消す-->
+  <%= render 'form', book: @book %>
+<!-- </form>タグを消す -->
+
+<%= link_to 'Show', book_path(@book), class: "show_#{@book.id}" %> |
+<%= link_to 'Back', books_path, class: "back" %>
